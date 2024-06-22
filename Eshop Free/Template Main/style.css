@@ -251,11 +251,12 @@ Version:1.0
 .accessibility-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     background-color: blue;
     color: white;
     padding: 10px;
     cursor: pointer;
+	border-radius: 90%;
 }
 
 .accessibility-options {
@@ -266,6 +267,10 @@ Version:1.0
     padding: 20px;
     display: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#foot {
+	background-color:#46388b ;
 }
 .header .navbar {
 	padding: 0;
@@ -865,7 +870,7 @@ Version:1.0
 	position:relative;
 }
 .header.shop .right-bar .sinlge-bar .single-icon:hover{
-	color:#7967D6;
+	color:#c5c1d8;
 }
 .header.shop .right-bar .sinlge-bar .single-icon .total-count {
 	position: absolute;
@@ -1081,6 +1086,10 @@ Version:1.0
 .hero-slider .hero-text .btn:hover{
 	background:#7967D6;
 	color:#fff;
+}
+
+#gorrito {
+	width: 50%;
 }
 /* Start Hero Area 2 CSS */
 .hero-area2{
@@ -2243,7 +2252,7 @@ Version:1.0
 	background:#3498db;
 }
 .shop.single .product-des .color ul li .two{
-	background:#7967D6;
+	background:#bcbbc4;
 }
 .shop.single .product-des .color ul li .three{
 	background:#8e44ad;
@@ -4805,3 +4814,190 @@ img {
 	End Footer CSS
 ===============================*/
 
+.btnn[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Flecha del tooltip */
+.btnn[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: 115%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.btnn[data-tooltip]:hover::after,
+.btnn[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-product .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Ajusta la duración de la transición según prefieras */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	font-size: 25px;
+}
+.single-product:hover .overlay{
+	opacity: 1;
+}
+
+.btns[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Flecha del tooltip */
+.btns[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: 115%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.btns[data-tooltip]:hover::after,
+.btns[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Flecha del tooltip */
+.logo[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: 115%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.logo[data-tooltip]:hover::after,
+.logo[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-icon[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Flecha del tooltip */
+.single-icon[data-tooltip]::before {
+    content: '';
+    position: absolute;
+    bottom: 115%; /* Ajusta la distancia desde el botón */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+/* Mostrar el tooltip al pasar el cursor */
+.single-icon[data-tooltip]:hover::after,
+.single-icon[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+p {
+	color:white;
+}
