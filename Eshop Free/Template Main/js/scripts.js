@@ -24,3 +24,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function adjustAccessibilityForVisualImpairment() {
+    changeCSS('css/stylefont.css');  // Ruta del archivo CSS para personas con discapacidad visual
+}
+function changeCSS(cssFile) {
+    let linkElement = document.getElementById('accessibility-css');
+    if (linkElement) {
+        linkElement.href = cssFile;
+    } else {
+        linkElement = document.createElement('link');
+        linkElement.rel = 'stylesheet';
+        linkElement.id = 'accessibility-css';
+        linkElement.href = cssFile;
+        document.head.appendChild(linkElement);
+    }
+}
+
+function ReiniciarTodo() {
+    removeFilter();
+    changeCSS('style.css');
+}

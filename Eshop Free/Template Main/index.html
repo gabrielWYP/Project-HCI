@@ -77,38 +77,8 @@
 	
 	<!-- Header -->
 	<header class="header shop">
-		<!-- Topbar -->
-		<div class="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-12">
-						<!-- Top Left -->
-						<div class="top-left">
-							<ul class="list-main">
-								<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
-								<li><i class="ti-email"></i> support@shophub.com</li>
-							</ul>
-						</div>
-						<!--/ End Top Left -->
-					</div>
-					<div class="col-lg-7 col-md-12 col-12">
-						<!-- Top Right -->
-						<div class="right-content">
-							<ul class="list-main">
-								<li><i class="ti-location-pin"></i> Store location</li>
-								<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
-								<li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
-							</ul>
-						</div>
-						<!-- End Top Right -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Topbar -->
-		<div class="middle-inner">
-			<div class="container">
+		<div class="middle-inner" id = "prueba">
+			<div class="container" >
 				<div class="row">
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
@@ -206,23 +176,10 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Product</a></li>												
-													<li><a href="#">Service</a></li>
-													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
-														<ul class="dropdown">
-															<li><a href="cart.html">Cart</a></li>
-															<li><a href="checkout.html">Checkout</a></li>
-														</ul>
-													</li>
-													<li><a href="#">Pages</a></li>									
-													<li><a href="#">Blog<i class="ti-angle-down"></i></a>
-														<ul class="dropdown">
-															<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
-														</ul>
-													</li>
-													<li><a href="contact.html">Contact Us</a></li>
-												</ul>
+													<li class="active" ><a href="index.html" id = "home">Home</a></li>
+													<li><a href="#">Pociones</a></li>												
+													<li><a href="#">Articulos</a></li>
+													<li><a href="#">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -612,7 +569,7 @@
     <!-- Modal end -->
 	<div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
-        <button onclick="adjustAccessibility(1)">Perfil para personas con discapacidad visual</button>
+        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="adjustAccessibility(2)">Perfil para personas con ceguera</button>
         <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
         <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
@@ -621,7 +578,7 @@
         <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
         <button onclick="applyFilter('protanopia')">Protanopia</button>
         <button onclick="applyFilter('tritanopia')">Tritanopia</button>
-        <button onclick="removeFilter()">Reiniciar ajustes</button>
+        <button onclick="ReiniciarTodo()">Reiniciar ajustes</button>
     </div>
 
     <script src="js/scripts.js">
