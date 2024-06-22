@@ -238,6 +238,7 @@ Version:1.0
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+	width: 50%;
 }
 
 .accessibility-button {
@@ -3993,6 +3994,9 @@ Version:1.0
 /*======================================
   10. Start Team CSS
 ========================================*/  
+img {
+	transition: transform 0.3s ease;
+}
 .team{
 	background:#F6F7FB;
 }
