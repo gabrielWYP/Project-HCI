@@ -239,6 +239,26 @@ Version:1.0
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
+
+.accessibility-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accessibility-options {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .header .navbar {
 	padding: 0;
 }
@@ -410,6 +430,13 @@ Version:1.0
 	color: #F7941D;
 	position: relative;
 	top: 1px;
+}
+
+.accessibility-options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 .header.shop .list-main li:last-child{
 	padding-right:0;
@@ -1029,7 +1056,7 @@ Version:1.0
 	transform: translateY(3px);
 }
 .header.shop .right-bar .sinlge-bar.top-search a:hover {
-	color:#F7941D;
+	color:#48a040;
 }
 .header.shop .right-bar .sinlge-bar .single-icon{
 	color:#333;

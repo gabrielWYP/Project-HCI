@@ -46,7 +46,23 @@
 	
 </head>
 <body class="js">
-	
+
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+        <defs>
+            <!-- Deuteranopia Filter -->
+            <filter id="deuteranopia">
+                <feColorMatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Protanopia Filter -->
+            <filter id="protanopia">
+                <feColorMatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Tritanopia Filter -->
+            <filter id="tritanopia">
+                <feColorMatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+        </defs>
+    </svg>
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -926,7 +942,22 @@
             </div>
     </div>
     <!-- Modal end -->
-	
+	<div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
+    <div class="accessibility-options">
+        <button onclick="adjustAccessibility(1)">Perfil para personas con discapacidad visual</button>
+        <button onclick="adjustAccessibility(2)">Perfil para personas con ceguera</button>
+        <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
+        <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
+        <button onclick="adjustAccessibility(5)">Perfil para personas con discapacidad motora</button>
+        <button onclick="adjustAccessibility(6)">Configuraciones de accesibilidad de bajo nivel</button>
+        <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
+        <button onclick="applyFilter('protanopia')">Protanopia</button>
+        <button onclick="applyFilter('tritanopia')">Tritanopia</button>
+        <button onclick="removeFilter()">Reiniciar ajustes</button>
+    </div>
+
+    <script src="js/scripts.js">
+    </script>
 	<!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->
@@ -1052,5 +1083,7 @@
 	<script src="js/easing.js"></script>
 	<!-- Active JS -->
 	<script src="js/active.js"></script>
+
+	
 </body>
 </html>
