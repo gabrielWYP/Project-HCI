@@ -41,6 +41,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/registro.css">
+		
     
         
         
@@ -166,9 +168,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -181,12 +183,17 @@
 		</div>
 		<!--/ End Header Inner -->
 	</header>
-    <h1>hola</h1>
+
+
 	<!--/ End Header -->
     <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
-		<button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
+        <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
+        <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
+        <button onclick="adjustAccessibility(5)">Perfil para personas con discapacidad motora</button>
+        <button onclick="adjustAccessibility(6)">Configuraciones de accesibilidad de bajo nivel</button>
         <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
         <button onclick="applyFilter('protanopia')">Protanopia</button>
         <button onclick="applyFilter('tritanopia')">Tritanopia</button>
@@ -195,6 +202,47 @@
 
     <script src="js/scripts.js">
     </script>
+
+<body3>
+    <div class="container5">
+        <h2>Registre sus datos:</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ejm: Salomón...">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ejm: Pérez...">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" placeholder="Ejm: 12345678...">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" placeholder="Ejm: ejemplo@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" placeholder="Ingrese su nueva contraseña">
+            </div>
+            <div class="form-group">
+                <label for="repita-contrasena">Repita su contraseña</label>
+                <input type="password" id="repita-contrasena" placeholder="Ingrese de nuevo su contraseña">
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="promociones">
+                    Deseo recibir ofertas y contenido promocional
+                </label>
+            </div>
+            <button type="button" class="btn-primary" onclick="location.href='index.html'">Confirmar Datos</button>
+            <button type="button" class="btn-secondary" onclick="location.href='login.html'">Volver al Login</button>
+        </form>
+    </div>
+</body3>
+    
     <!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->

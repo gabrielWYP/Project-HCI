@@ -113,7 +113,7 @@
 								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar">
-								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								<a href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
 								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
@@ -121,20 +121,20 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="cart.html">View Cart</a>
+										<a href="cart.html">Ver carrito</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Ring</a></h4>
-											<p class="quantity">1x - <span class="amount">$99.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
 										</li>
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Necklace</a></h4>
-											<p class="quantity">1x - <span class="amount">$35.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
 										</li>
 									</ul>
 									<div class="bottom">
@@ -200,7 +200,7 @@
                 <textarea class="form-control" id="comentarios" rows="5" placeholder="Cuéntenos en qué podemos mejorar..."></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">ENVIAR RECLAMO</button>
+                <button type="button" class="btn btn-primary" onclick="location.href='index.html'">ENVIAR RECLAMO</button>
             </div>
         </form>
     </div>
@@ -210,12 +210,8 @@
 </body>
     <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
-        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+		<button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
-        <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
-        <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
-        <button onclick="adjustAccessibility(5)">Perfil para personas con discapacidad motora</button>
-        <button onclick="adjustAccessibility(6)">Configuraciones de accesibilidad de bajo nivel</button>
         <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
         <button onclick="applyFilter('protanopia')">Protanopia</button>
         <button onclick="applyFilter('tritanopia')">Tritanopia</button>

@@ -41,6 +41,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/confircompra.css">
+		
     
         
         
@@ -113,7 +115,7 @@
 								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar">
-								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								<a href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
 								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
@@ -121,20 +123,20 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.html">Ver carrito</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Ring</a></h4>
-											<p class="quantity">1x - <span class="amount">$99.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
 										</li>
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Necklace</a></h4>
-											<p class="quantity">1x - <span class="amount">$35.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
 										</li>
 									</ul>
 									<div class="bottom">
@@ -142,7 +144,7 @@
 											<span>Total</span>
 											<span class="total-amount">$134.00</span>
 										</div>
-										<a href="checkout.html" class="btn animate">Checkout</a>
+										<a href="login.html" class="btn animate">Checkout</a>
 									</div>
 								</div>
 								<!--/ End Shopping Item -->
@@ -166,9 +168,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -181,12 +183,17 @@
 		</div>
 		<!--/ End Header Inner -->
 	</header>
-    <h1>hola</h1>
+
+
 	<!--/ End Header -->
     <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
-		<button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
+        <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
+        <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
+        <button onclick="adjustAccessibility(5)">Perfil para personas con discapacidad motora</button>
+        <button onclick="adjustAccessibility(6)">Configuraciones de accesibilidad de bajo nivel</button>
         <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
         <button onclick="applyFilter('protanopia')">Protanopia</button>
         <button onclick="applyFilter('tritanopia')">Tritanopia</button>
@@ -195,6 +202,56 @@
 
     <script src="js/scripts.js">
     </script>
+
+<body3>
+    <div class="container6">
+        <h2>Confirmación de compra:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Productos</th>
+                    <th>Cantidad</th>
+                    <th>C. Unitario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="imgs/libro del amor.jpg" style="width: 300px;" alt="Libro del amor"><br>
+                        <span>Libro del amor</span>
+                    </td>
+                    <td>1</td>
+                    <td>S/545.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imgs/pistola.jpg" style="width: 300px;" alt="Pistola de Portales"><br>
+                        <span>Pistola de Portales</span>
+                    </td>
+                    <td>1</td>
+                    <td>S/765.99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Subtotal</td>
+                    <td>S/1311.98</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Costo de envío</td>
+                    <td>S/15</td>
+                </tr>
+                <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td>S/1326.98</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button type="button" class="btn-primary" onclick="location.href='ValidaCompra.html'">CONFIRMAR COMPRA (S/1326.98)</button>
+        <button type="button" class="btn-secondary" onclick="history.back()">VOLVER A TARJETA</button>
+    </div>
+</body3>
+    
     <!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->

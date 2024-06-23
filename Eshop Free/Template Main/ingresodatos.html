@@ -41,6 +41,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/ingresoda.css">
+		
     
         
         
@@ -113,7 +115,7 @@
 								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar">
-								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								<a href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
 								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
@@ -121,20 +123,20 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.html">Ver carrito</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Ring</a></h4>
-											<p class="quantity">1x - <span class="amount">$99.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
 										</li>
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Necklace</a></h4>
-											<p class="quantity">1x - <span class="amount">$35.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
 										</li>
 									</ul>
 									<div class="bottom">
@@ -142,7 +144,7 @@
 											<span>Total</span>
 											<span class="total-amount">$134.00</span>
 										</div>
-										<a href="checkout.html" class="btn animate">Checkout</a>
+										<a href="login.html" class="btn animate">Checkout</a>
 									</div>
 								</div>
 								<!--/ End Shopping Item -->
@@ -166,9 +168,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -181,12 +183,17 @@
 		</div>
 		<!--/ End Header Inner -->
 	</header>
-    <h1>hola</h1>
+
+
 	<!--/ End Header -->
     <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
-		<button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
+        <button onclick="adjustAccessibility(3)">Perfil para personas con discapacidad cognitiva</button>
+        <button onclick="adjustAccessibility(4)">Perfil para personas con epilepsia</button>
+        <button onclick="adjustAccessibility(5)">Perfil para personas con discapacidad motora</button>
+        <button onclick="adjustAccessibility(6)">Configuraciones de accesibilidad de bajo nivel</button>
         <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
         <button onclick="applyFilter('protanopia')">Protanopia</button>
         <button onclick="applyFilter('tritanopia')">Tritanopia</button>
@@ -195,6 +202,54 @@
 
     <script src="js/scripts.js">
     </script>
+
+	<body3>
+		
+	
+	<div class="container3">
+        <div class="steps">
+            <div class="step active">
+                <span class="circle">1</span>
+                <span class="label">Entrega</span>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <span class="circle">2</span>
+                <span class="label">Pago</span>
+            </div>
+        </div>
+        <h2>Ingrese sus datos de entrega:</h2>
+        <form>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <input type="text" id="departamento" placeholder="Ejm: Lima...">
+            </div>
+            <div class="form-group">
+                <label for="provincia">Provincia</label>
+                <input type="text" id="provincia" placeholder="Ejm: Lima Metropolitana...">
+            </div>
+            <div class="form-group">
+                <label for="distrito">Distrito</label>
+                <input type="text" id="distrito" placeholder="Ejm: San Borja...">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" placeholder="Ejm: Calle Los Algarrobos...">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" placeholder="Ejm: 1051...">
+            </div>
+            <div class="form-group">
+                <label for="especificaciones">Especificaciones</label>
+                <input type="text" id="especificaciones" placeholder="Ejm: Departamento 101...">
+            </div>
+            <button type="button" class="btn-primary" onclick="location.href='ingresotarjeta.html'">Ir a pagar</button>
+            <button type="button" class="btn-secondary" onclick="location.href='index.html'">Volver al inicio</button>
+        </form>
+    </div>
+</body3>
+    
     <!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->

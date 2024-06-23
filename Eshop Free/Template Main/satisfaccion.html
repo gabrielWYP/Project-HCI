@@ -41,10 +41,12 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		
+		
     
         
         
-    </head>
+	</head>
 <body class="js">
     <audio id = "audioTrack" src="audios/SATISFACCION.mp3"></audio>
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
@@ -113,7 +115,7 @@
 								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar">
-								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								<a href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
 								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
@@ -121,20 +123,20 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.html">Ver carrito</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Ring</a></h4>
-											<p class="quantity">1x - <span class="amount">$99.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
 										</li>
 										<li>
 											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Necklace</a></h4>
-											<p class="quantity">1x - <span class="amount">$35.00</span></p>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
 										</li>
 									</ul>
 									<div class="bottom">
@@ -142,7 +144,7 @@
 											<span>Total</span>
 											<span class="total-amount">$134.00</span>
 										</div>
-										<a href="checkout.html" class="btn animate">Checkout</a>
+										<a href="login.html" class="btn animate">Checkout</a>
 									</div>
 								</div>
 								<!--/ End Shopping Item -->
@@ -166,9 +168,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -181,9 +183,7 @@
 		</div>
 		<!--/ End Header Inner -->
 	</header>
-    <h1>hola</h1>
-	<!--/ End Header -->
-    <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
+	<div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
         <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
         <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
@@ -199,6 +199,113 @@
 
     <script src="js/scripts.js">
     </script>
+
+	<style>
+        
+        .custom-section {
+            text-align: center;
+        }
+
+        .custom-button {
+            background-color: #4F4195;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #6a1b9a; /* Cambiar el color al pasar el mouse */
+        }
+    </style>
+
+	
+    
+
+<body>
+
+<title>Formulario de Satisfacción</title>
+<body class="custom-body">
+    <div class="custom-form-container">
+		<br>
+        <h1 class="custom-title" style="text-align: center;">Formulario de Satisfacción</h1><br>
+        <p1 class="custom-description" style="font-size: larger;">
+			Por favor, valore los siguientes aspectos de nuestro servicio:</p1>
+		<br>
+		
+        <form>
+            <table class="custom-table">
+                <tr>
+                    <th style="text-align: center;">Características</th>
+                    <th>Excelente</th>
+                    <th>Bueno</th>
+                    <th>Regular</th>
+                    <th>Malo</th>
+                    <th>Muy malo</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Atención al cliente</td>
+                    <td><input type="radio" name="atencion" value="excelente"></td>
+                    <td><input type="radio" name="atencion" value="bueno"></td>
+                    <td><input type="radio" name="atencion" value="regular"></td>
+                    <td><input type="radio" name="atencion" value="malo"></td>
+                    <td><input type="radio" name="atencion" value="muy malo"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Calidad del <br>producto/servicio</td>
+                    <td><input type="radio" name="calidad" value="excelente"></td>
+                    <td><input type="radio" name="calidad" value="bueno"></td>
+                    <td><input type="radio" name="calidad" value="regular"></td>
+                    <td><input type="radio" name="calidad" value="malo"></td>
+                    <td><input type="radio" name="calidad" value="muy malo"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Descripción y detalles <br>de productos</td>
+                    <td><input type="radio" name="descripcion" value="excelente"></td>
+                    <td><input type="radio" name="descripcion" value="bueno"></td>
+                    <td><input type="radio" name="descripcion" value="regular"></td>
+                    <td><input type="radio" name="descripcion" value="malo"></td>
+                    <td><input type="radio" name="descripcion" value="muy malo"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Variedad de <br> productos/ofertas</td>
+                    <td><input type="radio" name="variedad" value="excelente"></td>
+                    <td><input type="radio" name="variedad" value="bueno"></td>
+                    <td><input type="radio" name="variedad" value="regular"></td>
+                    <td><input type="radio" name="variedad" value="malo"></td>
+                    <td><input type="radio" name="variedad" value="muy malo"></td>
+                </tr>
+            </table>
+            <div class="custom-section">
+                <h5>¿En qué podemos mejorar?</h5>
+                <textarea id="mejorar" name="mejorar" class="custom-textarea" placeholder="Escriba acá" style="width: 1000px; height: 100px; "></textarea>
+            </div>
+			<br>
+            <div class="custom-section">
+                <h5>¿Recomendaría la página?</h5>
+				<br>
+                <label for="recomendar-si">Sí</label>
+                <input type="radio" id="recomendar-si" name="recomendar" value="si" >
+				<br>
+                <label for="recomendar-no">No</label>
+                <input type="radio" id="recomendar-no" name="recomendar" value="no">
+            </div>
+			<br>
+            <div class="custom-section custom-centered-button">
+                <a href="validacion.html" class="custom-button" style="color: white;">ENVIAR MIS RESULTADOS</a>
+				
+            </div>
+			<br>
+			<br>
+			
+
+        </form>
+    </div>
+    
     <!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->
