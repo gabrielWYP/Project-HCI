@@ -121,7 +121,7 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.html">View Cart</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
@@ -166,9 +166,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -198,6 +198,61 @@
     </div>
 
     <script src="js/scripts.js">
+    </script>
+
+    <div class="container">
+        <h1>Bienvenidos al centro de ayuda, <br> ¿Cómo podemos ayudarle?</h1>
+        <div class="tabs">
+            <button class="tab active" onclick="openTab('soporte')">SOPORTE</button>
+            <button class="tab" onclick="openTab('recomendaciones')">RECOMENDACIONES Y SUGERENCIAS</button>
+        </div>
+        <div id="soporte" class="tab-content">
+            <h2>Soporte para objetos mágicos</h2>
+            <div class="product">
+                <button class="prev">&#10094;</button>
+                <div class="product-info">
+                    <img src="https://via.placeholder.com/150" alt="Bola de cristal">
+                    <h3>Bola de cristal</h3>
+                    <p>$1,299.99</p>
+                    <p>La bola de cristal lee la mente del usuario y predice un futuro en el que el usuario podría estar después de sentirse así mismo realizado.</p>
+                </div>
+                <div class="product-info">
+                    <img src="https://via.placeholder.com/150" alt="Borrador Mágico">
+                    <h3>Borrador Mágico</h3>
+                    <p>$99.99</p>
+                    <p>El borrador es un escudo/martillo que se convierte en un borrador mientras está activo, eliminando solamente la tierra que entra en contacto con el objeto al día, los efectos son permanentes.</p>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+        <div id="recomendaciones" class="tab-content" style="display:none;">
+            <h2>Recomendaciones y sugerencias del sistema</h2>
+            <div class="recommendations">
+                <div class="recommendation">
+                    <img src="https://via.placeholder.com/100" alt="Formulario de satisfacción">
+                    <p>Completar formulario para satisfacción de usuario</p>
+                </div>
+                <div class="recommendation">
+                    <img src="https://via.placeholder.com/100" alt="Información de contacto">
+                    <p>Información de contacto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tab-content");
+            var tabs = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";  
+            event.currentTarget.classList.add("active");
+        }
     </script>
     <!-- Start Footer Area -->
 	<footer class="footer">
