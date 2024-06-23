@@ -1058,6 +1058,7 @@ Version:1.0
 	font-weight: 700;
 	color: #7967D6;
 	margin-bottom: 20px;
+	text-align: center;
 }
 .hero-slider .hero-text h1 span {
 	font-size: 20px;
@@ -1070,9 +1071,11 @@ Version:1.0
 .hero-slider .hero-text p {
 	color: #f8f7f7;
 	margin-bottom: 35px;
+	text-align: center;
 }
 .hero-slider .hero-text .button{
 	margin:0;
+	text-align: center;
 }
 .hero-slider .hero-text .btn {
 	color: #fff;
@@ -5010,7 +5013,6 @@ p {
 .product-item img {
 	width: 100%;
 	height: auto;
-	display: block;
 }
 
 .product-description {
@@ -5035,3 +5037,5 @@ p {
 .product-title {
 	margin-top: 1rem;
 }
+
+

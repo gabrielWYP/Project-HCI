@@ -46,7 +46,7 @@
         
     </head>
 <body class="js">
-    <audio id = "audioTrack" src="audios/AYUDA.mp3"></audio>
+    <audio id = "audioTrack" src="audios/RECLAMACION.mp3"></audio>
 	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
         <defs>
             <!-- Deuteranopia Filter -->
@@ -121,7 +121,7 @@
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.html">View Cart</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
@@ -166,9 +166,9 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active" ><a href="index.html" id = "home">Home</a></li>
-													<li><a href="#">Pociones</a></li>												
-													<li><a href="#">Articulos</a></li>
-													<li><a href="#">Ayuda</a></li>											
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
 										</div>
 									</div>
 								</nav>
@@ -181,8 +181,33 @@
 		</div>
 		<!--/ End Header Inner -->
 	</header>
-    <h1>hola</h1>
 	<!--/ End Header -->
+
+	<div class="container">
+        <h1 class="text-center">Libro de reclamaciones</h1>
+        <p class="text-center">Complete los siguientes datos:</p>
+        <form>
+            <div class="form-group">
+                <label for="fecha">Fecha del suceso:</label>
+                <input type="date" class="form-control" id="fecha" placeholder="Ejm: 20/06/2024">
+            </div>
+            <div class="form-group">
+                <label for="pedido">Nº de pedido:</label>
+                <input type="text" class="form-control" id="pedido" placeholder="Ejm: 202845564">
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Por favor, coméntenos su reclamo:</label>
+                <textarea class="form-control" id="comentarios" rows="5" placeholder="Cuéntenos en qué podemos mejorar..."></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">ENVIAR RECLAMO</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
     <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
     <div class="accessibility-options">
         <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
