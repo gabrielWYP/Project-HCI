@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>Gandalf - tu tienda magica</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="imgs/gorro.png">
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	
+	<!-- StyleSheet -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/niceselect.css">
+	<!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+	<!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="css/flex-slider.min.css">
+	<!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
+	<!-- Slicknav -->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+	
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+	
+	
+</head>
+<body class="js">
+	<audio id = "audioTrack" src="audios/index.mp3"></audio>
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+        <defs>
+            <!-- Deuteranopia Filter -->
+            <filter id="deuteranopia">
+                <feColorMatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Protanopia Filter -->
+            <filter id="protanopia">
+                <feColorMatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Tritanopia Filter -->
+            <filter id="tritanopia">
+                <feColorMatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+        </defs>
+    </svg>
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+	
+	
+	<!-- Header -->
+	<header class="header shop">
+		<div class="middle-inner" id = "prueba">
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img src="imgs/gorro.png" alt="logo"></a>
+						</div>
+						<!--/ End Logo -->
+						<!-- Search Form -->
+						<div class="search-top">
+							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+							<!-- Search Form -->
+							<div class="search-top">
+								<form class="search-form">
+									<input type="text" placeholder="Search here..." name="search">
+									<button value="search" type="submit"><i class="ti-search"></i></button>
+								</form>
+							</div>
+							<!--/ End Search Form -->
+						</div>
+						<!--/ End Search Form -->
+						<div class="mobile-nav"></div>
+					</div>
+					<div class="col-lg-8 col-md-7 col-12">
+						<div class="search-bar-top">
+							<div class="search-bar">
+								<select>
+									<option selected="selected">Pociones</option>
+									<option>Artefactos</option>
+								</select>
+								<form>
+									<input name="search" placeholder="Buscar..." type="search">
+									<button data-tooltip="Este boton busca lo ingresado en la barra de busqueda" class="btnn"><i class="ti-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar">
+								<a data-tooltip="Este botón te lleva a tus datos de usuario" href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar shopping">
+								<a data-tooltip="Este botón te lleva a tu carrito de compras" href="cart.html" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<!-- Shopping Item -->
+								<div class="shopping-item">
+									<div class="dropdown-cart-header">
+										<span>2 Items</span>
+										<a href="cart.html">Ver carrito</a>
+									</div>
+									<ul class="shopping-list">
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
+										</li>
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
+										</li>
+									</ul>
+									<div class="bottom">
+										<div class="total">
+											<span>Total</span>
+											<span class="total-amount">$134.00</span>
+										</div>
+										<a href="ingresodatos.html" class="btn animate">Checkout</a>
+									</div>
+								</div>
+								<!--/ End Shopping Item -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						
+						<div class="col-lg-9 col-12">
+							<div class="menu-area">
+								<!-- Main Menu -->
+								<nav class="navbar navbar-expand-lg">
+									<div class="navbar-collapse">	
+										<div class="nav-inner">	
+											<ul class="nav main-menu menu navbar-nav">
+												<li class="active" ><a href="index.html" id = "home">Home</a></li>
+												<li class="btns" data-tooltip="Este botón te lleva al apartado donde están todas las pociones"><a href="pociones.html">Pociones</a></li>												
+												<li class="btns" data-tooltip="Este botón te lleva al apartado donde están todas los artículos"><a href="artefactos.html">Articulos</a></li>
+												<li class="btns" data-tooltip="Este botón te lleva al apartado de ayuda al usuario"><a href="ayuda.html">Ayuda</a></li>												
+											</ul>										
+										</div>
+									</div>
+								</nav>
+								<!--/ End Main Menu -->	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+	
+	<!-- Slider Area -->
+	<section class="hero-slider">
+		<!-- Single Slider -->
+		<div class="single-slider">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-lg-9 offset-lg-3 col-12">
+						<div class="text-inner">
+							<div class="row">
+								<div class="col-lg-7 col-12">
+									<div class="hero-text">
+										<h1><span>HASTA 50% de DSCTO </span>Tu tienda mágica de confianza</h1>
+										<p>Encuentra productos extraordinarios <br> a precios bajos y de entrega rápida. <br> No te quedes sin ellos!</p>
+										<div class="button">
+											<a href="PRODUCTO_IGNIFUGO.html" class="btn">¡Comprar ahora!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Single Slider -->
+	</section>
+	<!--/ End Slider Area -->
+	
+	<!-- Start Most Popular -->
+	<div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Pociones</h2>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+						<!-- Start Single Product -->
+						<div class="single-product">
+							<div class="product-img">
+								<a href="prueba_producto.html">
+									<img class="default-img" src="imgs/ignifuga.jpg" alt="#">
+									<img class="hover-img" src="imgs/ignifuga.jpg" alt="#">
+									<span class="out-of-stock">Hot</span>
+								</a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-content">
+								<h3><a href="PRODUCTO_IGNIFUGO.html">Pocion ignifuga</a></h3>
+								<div class="product-price">
+									<span>S/949.99</span>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/invisible.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/invisible.jpg" alt="#">
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Pocion de invisibilidad</a></h3>
+                                <div class="product-price">
+                                    <span>S/4219.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/voladora.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/voladora.jpg" alt="#">
+									<span class="new">New</span>
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Pocion de vuelo</a></h3>
+                                <div class="product-price">
+                                    <span>S/3599.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/pocion goat.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/pocion goat.jpg" alt="#">
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Pocion "La cabra"</a></h3>
+                                <div class="product-price">
+                                    <span>S/1499.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Most Popular Area -->
+	<div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Artículos</h2>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+						<!-- Start Single Product -->
+						<div class="single-product">
+							<div class="product-img">
+								<a href="PRODUCTO_IGNIFUGO.html">
+									<img class="default-img" src="imgs/pistola.jpg" alt="#">
+									<img class="hover-img" src="imgs/pistola.jpg" alt="#">
+									<span class="out-of-stock">Hot</span>
+								</a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="product-content">
+								<h3><a href="PRODUCTO_IGNIFUGO.html">Pistola de Portales</a></h3>
+								<div class="product-price">
+									<span>S/765.99</span>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/libro del amor.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/libro del amor.jpg" alt="#">
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Libro del Amor</a></h3>
+                                <div class="product-price">
+                                    <span>S/545.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/borrador.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/borrador.jpg" alt="#">
+									<span class="new">New</span>
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Borrador Magico</a></h3>
+                                <div class="product-price">
+                                    <span>S/6969.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+						<!-- Start Single Product -->
+						<div class="single-product">
+                            <div class="product-img">
+                                <a href="PRODUCTO_IGNIFUGO.html">
+                                    <img class="default-img" src="imgs/doraemon.jpg" alt="#">
+                                    <img class="hover-img" src="imgs/doraemon.jpg" alt="#">
+                                </a>
+								<div class="button-head">
+									<div class="product-action">
+										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
+										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
+										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									</div>
+									<div class="product-action-2">
+										<a title="Add to cart" href="#">Add to cart</a>
+									</div>
+								</div>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="PRODUCTO_IGNIFUGO.html">Bolso de Doraemon</a></h3>
+                                <div class="product-price">
+                                    <span>S/549.99</span>
+                                </div>
+                            </div>
+                        </div>
+						<!-- End Single Product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Most Popular Area -->
+	
+	
+	
+	<!-- Start Shop Services Area -->
+	<section class="shop-services section home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-rocket"></i>
+						<h4>Delivery Gratis</h4>
+						<p>Compras mayores a 1324 soles</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-reload"></i>
+						<h4>Devolucion gratuita </h4>
+						<p>Hasta 30 dias despues de la compra</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-lock"></i>
+						<h4>Pago Seguro</h4>
+						<p>Pago 100% seguro</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-tag"></i>
+						<h4>Los mejores precios</h4>
+						<p>Precios Garantizados</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Shop Services Area -->
+	
+	<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row no-gutters">
+							<div class="col-lg-6 offset-lg-3 col-12">
+								<h4 style="margin-top:100px;font-size:14px; font-weight:500; color:#F7941D; display:block; margin-bottom:5px;">Eshop Free Lite</h4>
+								<h3 style="font-size:30px;color:#333;">Currently You are using free lite Version of Eshop.<h3>
+								<p style="display:block; margin-top:20px; color:#888; font-size:14px; font-weight:400;">Please, purchase full version of the template to get all pages, features and commercial license</p>
+								<div class="button" style="margin-top:30px;">
+									<a href="https://wpthemesgrid.com/downloads/eshop-ecommerce-html5-template/" target="_blank" class="btn" style="color:#fff;">Buy Now!</a>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Modal end -->
+	<div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
+    <div class="accessibility-options">
+        <button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+        <button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
+        <button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
+        <button onclick="applyFilter('protanopia')">Protanopia</button>
+        <button onclick="applyFilter('tritanopia')">Tritanopia</button>
+        <button onclick="ReiniciarTodo()">Reiniciar ajustes</button>
+    </div>
+
+    <script src="js/scripts.js">
+    </script>
+	<!-- Start Footer Area -->
+	<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top section" id = "foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<table>
+								<tr>
+									<td>
+										<div class="logo">
+											<a href="index.html"><p> Main Page</p><img src="imgs/gorro.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+									<td>
+										<div class="logo">
+											<a href="ayuda.html"><p> Soporte al cliente</p><img src="imgs/sopore.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+									<td>
+										<div class="logo">
+											<a href="reclamos.html"><p> Libro de reclamaciones</p><img src="imgs/libro.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<p class="text">Somos una empresa dedicada a la venta de artefactos magicos y pociones que ayuden a nuestros clientes a alcanzar sus objetivos. Queremos que se sientan orgullosos de si mismos y puedan ser quienes quieran ser</p>
+							<p class="call">Tienes preguntas? Contactanos las 24 horas del dia, 7 dias a la semana<span><a href="tel:123456789">+0123 456 789</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Productos magicos y ajustes</h4>
+							<ul>
+								<li><a href="pociones.html">Pociones</a></li>
+								<li><a href="artefactos.html">Articulos</a></li>
+								<li><a href="info_acc.html">Ajustes</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Apartado de compras</h4>
+							<ul>
+								<li><a href="#">Carrito de compras</a></li>
+								<li><a href="#">Oferta del dia</a></li>
+								<li><a href="#">Carrusel de Productos</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+	</footer>
+	<!-- /End Footer Area -->
+ 
+	<!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Color JS -->
+	<script src="js/colors.js"></script>
+	<!-- Slicknav JS -->
+	<script src="js/slicknav.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="js/owl-carousel.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="js/magnific-popup.js"></script>
+	<!-- Waypoints JS -->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Countdown JS -->
+	<script src="js/finalcountdown.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="js/nicesellect.js"></script>
+	<!-- Flex Slider JS -->
+	<script src="js/flex-slider.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="js/scrollup.js"></script>
+	<!-- Onepage Nav JS -->
+	<script src="js/onepage-nav.min.js"></script>
+	<!-- Easing JS -->
+	<script src="js/easing.js"></script>
+	<!-- Active JS -->
+	<script src="js/active.js"></script>
+
+	
+</body>
+</html>

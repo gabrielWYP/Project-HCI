@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <!-- Meta Tag -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name='copyright' content=''>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Title Tag  -->
+        <title>Gandalf - tu tienda magica</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="imgs/gorro.png">
+        <!-- Web Font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        
+        <!-- StyleSheet -->
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <!-- Themify Icons -->
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="css/niceselect.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Flex Slider CSS -->
+        <link rel="stylesheet" href="css/flex-slider.min.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <!-- Slicknav -->
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        
+        <!-- Eshop StyleSheet -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+        
+        
+    </head>
+<body class="js">
+    <audio id = "audioTrack" src="audios/AYUDA.mp3"></audio>
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+        <defs>
+            <!-- Deuteranopia Filter -->
+            <filter id="deuteranopia">
+                <feColorMatrix type="matrix" values="0.625, 0.375, 0, 0, 0, 0.7, 0.3, 0, 0, 0, 0, 0.3, 0.7, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Protanopia Filter -->
+            <filter id="protanopia">
+                <feColorMatrix type="matrix" values="0.567, 0.433, 0, 0, 0, 0.558, 0.442, 0, 0, 0, 0, 0.242, 0.758, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+            <!-- Tritanopia Filter -->
+            <filter id="tritanopia">
+                <feColorMatrix type="matrix" values="0.95, 0.05, 0, 0, 0, 0, 0.433, 0.567, 0, 0, 0, 0.475, 0.525, 0, 0, 0, 0, 0, 1, 0" />
+            </filter>
+        </defs>
+    </svg>
+	
+     <!-- Header -->
+	<header class="header shop">
+		<div class="middle-inner" id = "prueba">
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-12">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img src="imgs/gorro.png" alt="logo"></a>
+						</div>
+						<!--/ End Logo -->
+						<!-- Search Form -->
+						<div class="search-top">
+							<div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+							<!-- Search Form -->
+							<div class="search-top">
+								<form class="search-form">
+									<input type="text" placeholder="Search here..." name="search">
+									<button value="search" type="submit"><i class="ti-search"></i></button>
+								</form>
+							</div>
+							<!--/ End Search Form -->
+						</div>
+						<!--/ End Search Form -->
+						<div class="mobile-nav"></div>
+					</div>
+					<div class="col-lg-8 col-md-7 col-12">
+						<div class="search-bar-top">
+							<div class="search-bar">
+								<select>
+									<option selected="selected">Categorias</option>
+									<option>watch</option>
+									<option>mobile</option>
+									<option>kid’s item</option>
+								</select>
+								<form>
+									<input name="search" placeholder="Buscar..." type="search">
+									<button data-tooltip="Este boton busca lo ingresado en la barra de busqueda" class="btnn"><i class="ti-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar">
+								<a href="info_acc.html" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+							</div>
+							<div class="sinlge-bar shopping">
+								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<!-- Shopping Item -->
+								<div class="shopping-item">
+									<div class="dropdown-cart-header">
+										<span>2 Items</span>
+										<a href="cart.html">Ver carrito</a>
+									</div>
+									<ul class="shopping-list">
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="imgs/invisible.jpg" alt="#"></a>
+											<h4><a href="#">Pocion de invisibilidad</a></h4>
+											<p class="quantity">2x - <span class="amount">$100</span></p>
+										</li>
+										<li>
+											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+											<a class="cart-img" href="#"><img src="imgs/camara.png" alt="#"></a>
+											<h4><a href="#">Camara captura-recuerdos</a></h4>
+											<p class="quantity">1x - <span class="amount">$100</span></p>
+										</li>
+									</ul>
+									<div class="bottom">
+										<div class="total">
+											<span>Total</span>
+											<span class="total-amount">$134.00</span>
+										</div>
+										<a href="ingresodatos.html" class="btn animate">Checkout</a>
+									</div>
+								</div>
+								<!--/ End Shopping Item -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						
+						<div class="col-lg-9 col-12">
+							<div class="menu-area">
+								<!-- Main Menu -->
+								<nav class="navbar navbar-expand-lg">
+									<div class="navbar-collapse">	
+										<div class="nav-inner">	
+											<ul class="nav main-menu menu navbar-nav">
+													<li class="active" ><a href="index.html" id = "home">Home</a></li>
+													<li><a href="pociones.html">Pociones</a></li>												
+													<li><a href="artefactos.html">Articulos</a></li>
+													<li><a href="ayuda.html">Ayuda</a></li>											
+										</div>
+									</div>
+								</nav>
+								<!--/ End Main Menu -->	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+    
+	<!--/ End Header -->
+    <div class="accessibility-button" onclick="toggleAccessibilityOptions()">Accesibilidad</div>
+		<div class="accessibility-options">
+			<button onclick="adjustAccessibilityForVisualImpairment()">Perfil para personas con discapacidad visual</button>
+			<button onclick="playAudioWithDelay()">Perfil para personas con ceguera</button>
+			<button onclick="applyFilter('deuteranopia')">Deuteranopia</button>
+			<button onclick="applyFilter('protanopia')">Protanopia</button>
+			<button onclick="applyFilter('tritanopia')">Tritanopia</button>
+			<button onclick="ReiniciarTodo()">Reiniciar ajustes</button>
+		</div>
+
+    <script src="js/scripts.js">
+    </script>
+
+<title>Centro de Ayuda</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            background-color: #fff;
+        }
+        h1 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 0;
+			margin-bottom: 0px;
+        }
+
+		h2{
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+        .tabs {
+            background-color: #4b0082;
+            overflow: hidden;
+            text-align: center;
+        }
+        .tabs button {
+            background-color: #4b0082;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            color: white;
+            font-size: 17px;
+            display: inline-block;
+			margin-top: 30px;
+        }
+        .tabs button:hover {
+            background-color: #ddd;
+            color: black;
+			
+        }
+        .tabs button.active {
+            background-color: #ddd;
+            color: black;
+			margin-bottom: 20px;
+        }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+			
+        }
+        .carousel {
+            position: relative;
+            width: 40%;
+			margin: -4px;
+        }
+        .product-info {
+            display: none;
+			
+        }
+        .recommendations {
+            display: flex;
+            justify-content: center;
+        }
+        .recommendation {
+            margin: 0 20px;
+        }
+        .recommendation img {
+            width: 100px;
+            height: 100px;
+        }
+		h3{
+
+			margin-bottom: 40px;
+
+		}
+
+		h5{
+
+			margin-top: 30px;
+			margin-bottom: 20px;
+
+		}
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(30%);
+            background-color: #4b0082;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+			
+        }
+        .carousel-button.prev {
+            left: 220px;
+			
+			
+        }
+        .carousel-button.next {
+            right: 220px;
+        }
+		p1{
+			color: black;
+			padding: 0%;
+			text-align: justify;
+			
+			
+		}
+    </style>
+
+<body>
+
+<h1>Bienvenidos al centro de ayuda, <br> ¿Cómo podemos ayudarle?</h1>
+
+<div class="tabs">
+    <button class="tab active" onclick="openTab('soporte')">SOPORTE</button>
+    <button class="tab" onclick="openTab('recomendaciones')">RECOMENDACIONES Y SUGERENCIAS</button>
+</div>
+
+<div id="soporte">
+    <h2>Soporte para objetos mágicos</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="pociones">
+            <h3>Pociones Mágicas</h3>
+            <button class="carousel-button prev" onclick="changeSlide('pociones', -1)">&#10094;</button>
+            <div class="product-info">
+				<h5>Poción de invisibilidad</h5>
+				
+                <img src="imgs/invisible.jpg" alt="Poción 1" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1> Bebe la poción de invisibilidad para volverte<br> invisible temporalmente. Evita
+					 hacer ruidos y<br> movimientos bruscos que puedan revelar tu ubicación.</p1>
+            </div>
+            <div class="product-info">
+				<h5>Poción "El goat"</h5>
+				
+                <img src="imgs/pocion goat.jpg" alt="Poción 2" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Una poción mágica transforma a quien la bebe en un<br> habilidoso jugador de fútbol como Lionel Messi,<br> desatando aventuras extraordinarias</p1>
+            </div>
+            <div class="product-info">
+				<h5>Poción de mutante </h5>
+				
+				
+                <img src="imgs/superfuerza.jpg" alt="Poción 3" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>La poción de superfuerza se toma en sorbos para una <br>absorción gradual. Concede vigor y fuerza sobrehumana<br> durante horas para realizar proezas físicas excepcionales.</p1>
+            </div>
+			<div class="product-info">
+				<h5>Poción ignífuga</h5>
+				
+                <img src="imgs/ignifuga.jpg" alt="Poción 3" style="height: 150px; width: 200px; ">
+				<h5>Indicaciones:</h5>
+				<p1>Una poción ignífuga, bebida en pequeñas dosis, protege <br>al usuario del fuego y las altas temperaturas, proporcionando <br>seguridad y resistencia ante el calor extremo.</p1>
+                
+            </div>
+			<div class="product-info">
+				<h5>Poción Mozzarela</h5>
+				
+                <img src="imgs/pocion musico.jpg" alt="Poción 3" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Una poción única transforma al bebedor en un virtuoso músico<br> como Mozart, dotándolo de genialidad musical y <br>talento incomparable instantáneamente.</p1>
+            </div>
+			<div class="product-info">
+				<h5>Poción de vuelo</h5>
+				
+                <img src="imgs/voladora.jpg" alt="Poción 3" style="height: 150px; width: 200px; ">
+				<h5>Indicaciones:</h5>
+				<p1>Una poción brillante, bebida en un solo trago, otorga la habilidad <br>de volar con gracia y control, elevando al usuario<br> por los cielos con libertad absoluta.</p1>
+                
+            </div>
+            <button class="carousel-button next" onclick="changeSlide('pociones', 1)">&#10095;</button>
+        </div>
+
+        <div class="carousel" id="artefactos">
+            <h3>Artefactos Mágicos</h3>
+            <button class="carousel-button prev" onclick="changeSlide('artefactos', -1)">&#10094;</button>
+            <div class="product-info">
+				<h5>Bolsa magica</h5>
+                <img src="imgs/doraemon.jpg" alt="Artefacto 1" style="height: 150px; width: 200px; ">
+				<h5>Indicaciones:</h5>
+                <p1>Un bolso al estilo de Doraemon, mágicamente expansible, <br>que guarda y saca cualquier objeto deseado, <br>facilitando aventuras con infinitas posibilidades.</p1>
+            </div>
+            <div class="product-info">
+				<h5>Borrador magico</h5>
+                <img src="imgs/borrador.jpg" alt="Artefacto 2" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Un borrador anual único que borra cualquier cosa que toca, <br>restaurando la pureza y la oportunidad <br>de comenzar de nuevo cada año.</p1>
+            </div>
+            <div class="product-info">
+				<h5>Pistola de portales</h5>
+                <img src="imgs/pistola.jpg" alt="Artefacto 3" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Una pistola futurista del universo de Rick y Morty dispara<br> rayos que distorsionan la realidad, causando caos cósmico<br> y aventuras interdimensionales impredecibles.</p1>
+            </div>
+			<div class="product-info">
+				<h5>Libro del amor</h5>
+                <img src="imgs/libro del amor.jpg" alt="Artefacto 1" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>El Libro del Amor permite inscribir nombres de almas afines,<br> sellando destinos entrelazados con magia eterna<br> y conexiones profundas entre corazones.</p1>
+            </div>
+			<div class="product-info">
+				<h5>Televisor que ve el futuro</h5>
+                <img src="imgs/televisor.png" alt="Artefacto 1" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Un televisor excepcional que muestra eventos futuros en tiempo<br> real, revelando destinos inciertos y posibilidades<br> inexploradas con cada imagen proyectada.</p1>
+            </div>
+			<div class="product-info">
+				<h5>Camara captura-recuerdos</h5>
+                <img src="imgs/camara.png" alt="Artefacto 1" style="height: 150px; width: 200px; ">
+                <h5>Indicaciones:</h5>
+				<p1>Una cámara especial que captura recuerdos vívidamente, permitiendo<br> revivir momentos pasados con emociones y detalles <br>precisos al visualizar las fotografías.</p1>
+            </div>
+            <button class="carousel-button next" onclick="changeSlide('artefactos', 1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+<div id="recomendaciones" style="display:none;">
+    <h2>Recomendaciones y sugerencias del sistema</h2>
+    <div class="recommendations">
+        <div class="recommendation">
+			<a href="satisfaccion.html">
+            <img src="imgs/formulario.png" alt="Formulario de satisfacción">
+			<br>
+			<br>
+            <p1>Completar formulario para <br>satisfacción de usuario</p1>
+        </div>
+        <div class="recommendation">
+            <img src="imgs/grupopersonas.png" alt="Información de contacto">
+			<br>
+			<br>
+			
+            <p1>Gandalf@lasmejormagiasiempre.pe</p1>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function openTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("tab");
+        var y = document.getElementById(tabName);
+        for (i = 0; i < x.length; i++) {
+            x[i].classList.remove("active");
+        }
+        for (i = 0; i < document.getElementsByClassName("product-info").length; i++) {
+            document.getElementsByClassName("product-info")[i].style.display = "none";
+        }
+        document.querySelector(".tab[onclick=\"openTab('" + tabName + "')\"]").classList.add("active");
+        document.getElementById("soporte").style.display = "none";
+        document.getElementById("recomendaciones").style.display = "none";
+        y.style.display = "block";
+
+        // Reinitialize carousels when showing the 'soporte' tab
+        if (tabName === 'soporte') {
+            showSlides('pociones', slideIndices.pociones);
+            showSlides('artefactos', slideIndices.artefactos);
+        }
+    }
+
+    var slideIndices = {
+        pociones: 1,
+        artefactos: 1
+    };
+
+    function changeSlide(carouselId, n) {
+        showSlides(carouselId, slideIndices[carouselId] += n);
+    }
+
+    function showSlides(carouselId, n) {
+        var i;
+        var slides = document.getElementById(carouselId).getElementsByClassName("product-info");
+        if (n > slides.length) { slideIndices[carouselId] = 1; }
+        if (n < 1) { slideIndices[carouselId] = slides.length; }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndices[carouselId] - 1].style.display = "block";
+    }
+
+    // Initialize carousels
+    showSlides('pociones', slideIndices.pociones);
+    showSlides('artefactos', slideIndices.artefactos);
+</script>
+    <!-- Start Footer Area -->
+	<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top section" id = "foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<table>
+								<tr>
+									<td>
+										<div class="logo">
+											<a href="index.html"><p> Main Page</p><img src="imgs/gorro.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+									<td>
+										<div class="logo">
+											<a href="ayuda.html"><p> Soporte al cliente</p><img src="imgs/sopore.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+									<td>
+										<div class="logo">
+											<a href="reclamos.html"><p> Libro de reclamaciones</p><img src="imgs/libro.png" id = "gorrito" alt="#"></a>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<p class="text">Somos una empresa dedicada a la venta de artefactos magicos y pociones que ayuden a nuestros clientes a alcanzar sus objetivos. Queremos que se sientan orgullosos de si mismos y puedan ser quienes quieran ser</p>
+							<p class="call">Tienes preguntas? Contactanos las 24 horas del dia, 7 dias a la semana<span><a href="tel:123456789">+0123 456 789</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Productos magicos y ajustes</h4>
+							<ul>
+								<li><a href="pociones.html">Pociones</a></li>
+								<li><a href="artefactos.html">Articulos</a></li>
+								<li><a href="info_acc.html">Ajustes</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Apartado de compras</h4>
+							<ul>
+								<li><a href="#">Carrito de compras</a></li>
+								<li><a href="#">Oferta del dia</a></li>
+								<li><a href="#">Carrusel de Productos</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+	</footer>
+	<!-- /End Footer Area -->
+     <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Color JS -->
+	<script src="js/colors.js"></script>
+	<!-- Slicknav JS -->
+	<script src="js/slicknav.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="js/owl-carousel.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="js/magnific-popup.js"></script>
+	<!-- Waypoints JS -->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Countdown JS -->
+	<script src="js/finalcountdown.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="js/nicesellect.js"></script>
+	<!-- Flex Slider JS -->
+	<script src="js/flex-slider.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="js/scrollup.js"></script>
+	<!-- Onepage Nav JS -->
+	<script src="js/onepage-nav.min.js"></script>
+	<!-- Easing JS -->
+	<script src="js/easing.js"></script>
+	<!-- Active JS -->
+	<script src="js/active.js"></script>
+</body>
+</html>
