@@ -1,0 +1,109 @@
+body3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+}
+h1 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tabs {
+    background-color: #4b0082;
+    overflow: hidden;
+    text-align: center;
+}
+.tabs button {
+    background-color: #4b0082;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.tabs button:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+.tabs button.active {
+    background-color: #ddd;
+    color: black;
+    margin-bottom: 20px;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+.carousel {
+    position: relative;
+    width: 40%;
+    margin: -4px;
+}
+.product-info {
+    display: none;
+    
+}
+.recommendations {
+    display: flex;
+    justify-content: center;
+}
+.recommendation {
+    margin: 0 20px;
+}
+.recommendation img {
+    width: 100px;
+    height: 100px;
+}
+h3{
+
+    margin-bottom: 40px;
+
+}
+
+h5{
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(30%);
+    background-color: #4b0082;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.carousel-button.prev {
+    left: 220px;
+    
+    
+}
+.carousel-button.next {
+    right: 220px;
+}
+p1{
+    color: black;
+    padding: 0%;
+    text-align: justify;
+    
+    
+}
